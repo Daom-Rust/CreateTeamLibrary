@@ -3,7 +3,9 @@ setlocal EnableDelayedExpansion
 
 :: Detect if the script is running in PowerShell
 set psDetect=%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe
-for /f "tokens=*" %%i in ('%psDetect% -Command "Write-Output 1"') do set psCheck=%%i
+for /f "delims=" %%i in ('%psDetect% -Command "Write-Output 1"') do (
+    set psCheck=%%i
+)
 
 if "%psCheck%"=="1" (
     :: Running in PowerShell
@@ -13,11 +15,12 @@ if "%psCheck%"=="1" (
     set target=%cd%
     set junctionPath=C:\src
 
-    if exist %junctionPath% (
-        rmdir %junctionPath%
+    if exist "%junctionPath%" (
+        rmdir "%junctionPath%"
     )
 
-    mklink /J %junctionPath% %target%
+    mklink /J "%junctionPath%" "%target%"
 )
 
 endlocal
+pause
