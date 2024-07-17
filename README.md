@@ -5,6 +5,7 @@
 ```bash
 git clone https://github.com/Daom-Rust/CreateTeamLibrary.git
 cd CreateTeamLibrary
+setting/CreateJunction.bat
 code .
 ```
 
