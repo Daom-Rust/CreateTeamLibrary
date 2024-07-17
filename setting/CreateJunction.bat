@@ -9,7 +9,7 @@ for /f "delims=" %%i in ('%psDetect% -Command "Write-Output 1"') do (
 
 if "%psCheck%"=="1" (
     :: Running in PowerShell
-    %SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File "CreateJunction.ps1" -JunctionBasePath "C:\src" -TargetPath "%cd%"
+    %SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File "setting\CreateJunction.ps1" -JunctionBasePath "C:\src" -TargetPath "%cd%"
 ) else (
     :: Running in CMD
     set target=%cd%
