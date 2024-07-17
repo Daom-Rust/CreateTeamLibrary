@@ -22,3 +22,5 @@ chmod -x setting/CreateJunction.sh
 ## [기획서](https://github.com/Daom-Rust/CreateTeamLibrary/blob/main/docs/%EA%B8%B0%ED%9A%8D%EC%84%9C.md)
 
 ## [TODO](https://github.com/Daom-Rust/CreateTeamLibrary/blob/main/docs/TODO.md)
+
+## [Progress](https://github.com/orgs/Daom-Rust/projects/2/views/1)
