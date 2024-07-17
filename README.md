@@ -8,10 +8,16 @@
 git clone https://github.com/Daom-Rust/CreateTeamLibrary.git
 cd CreateTeamLibrary
 setting\CreateJunction.bat
-code .
 ```
 
-
+## For Ubuntu
+```bash
+git clone https://github.com/Daom-Rust/CreateTeamLibrary.git
+cd CreateTeamLibrary
+chmod +x setting/CreateJunction.sh
+setting/CreateJunction.sh
+chmod -x setting/CreateJunction.sh
+```
 # Docs
 ## [기획서](https://github.com/Daom-Rust/CreateTeamLibrary/blob/main/docs/%EA%B8%B0%ED%9A%8D%EC%84%9C.md)
 
